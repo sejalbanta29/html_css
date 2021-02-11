@@ -1,0 +1,390 @@
+<html>
+	<body>
+    	<style>
+        	*
+        	{
+            	margin: 0;
+            	padding: 0;
+        	}
+
+        	.bugs
+        	{
+           	margin: auto;
+           	border-radius: 8px;
+           	height: 985px;
+           	width: 550px;
+           	background-color: white;
+           	margin-top: 2%;
+           	border-style: solid;
+           	border-color: lightgray;
+        	}
+         	 
+        	.bug
+        	{
+            	margin: 0;
+            	padding: 0;
+            	widows: 550px;
+            	height: 80px;
+            	background-color: lightgray;
+        	}
+        	.bug p
+        	{
+            	padding: 20px;
+            	color: white;
+            	font-weight: 900;
+            	font-size: 30px;
+            	word-spacing: -7px;
+        	}
+
+        	.foot
+        	{
+            	height: 50px;
+        	}
+        	 
+
+         	input,label{
+             	display: block;
+         	}
+
+         	#title
+         	{
+             	margin-top: 20px;
+             	margin-left: 20px;
+             	color: rgb(88, 85, 85);
+         	}
+
+         	#description
+         	{
+           	margin-top: 20px;
+           	margin-left: 20px;
+           	color: rgb(88, 85, 85);
+         	}
+           	 
+        	#operating
+        	{
+            	margin-top: 20px;
+           	margin-left: 20px;
+           	color: rgb(88, 85, 85);
+        	}
+
+        	#product
+        	{
+            	margin-top: 20px;
+           	margin-left: 20px;
+           	color: rgb(88, 85, 85);
+        	}
+
+        	#version
+        	{
+            	margin-top: 20px;
+           	margin-left: 20px;
+           	color: rgb(88, 85, 85);
+        	}
+
+        	#license
+        	{
+            	margin-top: 20px;
+           	margin-left: 20px;
+           	color: rgb(88, 85, 85);
+        	}
+
+        	#attachments
+        	{
+            	margin-top: 20px;
+           	margin-left: 20px;
+           	color: rgb(88, 85, 85);
+        	}
+       	 
+        	button {
+            	margin-top: -54px;
+            	margin-left: 372px;
+    	position: absolute;
+   	 
+    	border-radius: 2px;
+    	 
+    	z-index: 2;
+    	border: none;
+     	width: 141px;
+    	height: 41px;
+    	cursor: pointer;
+    	color: white;
+    	background-color: rgb(155, 151, 151);
+    	transform: translateX(1px);
+	}
+        	input[type=text]
+        	{
+            	width: 90%;
+  padding: 12px 20px;
+  margin: 9px 20px;
+  display: block;
+  border: 1px solid rgb(155, 151, 151);
+  border-width: 2px;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+        	}
+
+        	input[type=textbox]
+        	{
+            	height: 120%;
+            	width: 90%;
+  padding: 12px 20px;
+  margin: 9px 20px;
+  display: block;
+  border: 1px solid rgb(155, 151, 151);
+  border-width: 2px;;
+  border-radius: 4px;
+  box-sizing: border-box;
+        	}
+
+        	.select-css {
+    display: block;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #444;
+    line-height: 1.3;
+    padding: 12px 20px;
+  margin: 9px 20px;
+  display: block;
+    width: 90%;
+    max-width: 100%;
+    box-sizing: border-box;
+    
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    border-radius: .5em;
+    -moz-appearance: none;  
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #2ab4a2;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDI1NSAyNTUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGcgaWQ9ImFycm93LWRyb3AtZG93biI+CgkJPHBvbHlnb24gcG9pbnRzPSIwLDYzLjc1IDEyNy41LDE5MS4yNSAyNTUsNjMuNzUgICAiIGZpbGw9IiNmZmY3ZjciIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcG9seWdvbj4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+');
+    color: white;  
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .99rem auto, 100%;
+}
+   
+.select-csss {
+    display: block;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #444;
+    line-height: 1.3;
+    padding: 12px 20px;
+  margin: 9px 20px;
+  display: block;
+    width: 90%;
+    max-width: 100%;
+    box-sizing: border-box;
+    
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    border-radius: .5em;
+    -moz-appearance: none;  
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #2ab4a2;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDI1NSAyNTUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGcgaWQ9ImFycm93LWRyb3AtZG93biI+CgkJPHBvbHlnb24gcG9pbnRzPSIwLDYzLjc1IDEyNy41LDE5MS4yNSAyNTUsNjMuNzUgICAiIGZpbGw9IiNmZmY3ZjciIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcG9seWdvbj4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+');
+    color: white;  
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .99rem auto, 100%;
+}
+
+#ver
+{
+	width: 25%;
+  padding: 12px 20px;
+  margin: 9px 20px;
+  display: block;
+  border: 1px solid rgb(155, 151, 151);
+  border-width: 2px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+    
+	.some-class {
+  	float: left;
+  	clear: none;
+  	width: 550px;
+  padding: 12px 20px;
+  margin: 5px -3px;
+	}
+    
+	.lab {			
+  	float: left;
+  	clear: none;
+  	display: block;
+  	padding: 0px 1em 0px 8px;
+  	color: rgb(88, 85, 85);
+	}
+    
+	input[type=radio],
+	input.radio {
+  	float: left;
+  	clear: none;
+  	margin: 2px 0 2px 0px;
+  	color: rgb(88, 85, 85);
+ 	 
+	}
+
+	#z
+	{
+    	margin-left: 150px;
+    	color: rgb(88, 85, 85);
+    	font-weight: bolder;
+	}
+
+    
+	#y
+	{
+    	font-weight: bolder;
+	}
+
+ 	::placeholder
+ 	{
+  	font-weight: bold;
+  	color: rgb(59, 58, 58);
+ 	}
+   	 
+	.send
+	{
+    	background-color: lightgray;
+    	margin-top: 820px;
+    	height: 87px;
+    	width: 550px;
+    	border-radius: 5px;
+	}
+    
+	#sendb
+	{
+    	background-color: #2ab4a2;
+    	position: absolute;
+    	margin-top: 20px;
+    	border-radius: 5px;
+    	font-size: 20px;
+    	width: 90px;
+    	margin-left: 420px;
+    	height: 50px;
+    	font-weight: bolder;
+	}
+    
+
+	#clear
+	{
+    	font-weight: bolder;
+                margin-top: -50px;
+
+
+}
+
+	.nav
+	{
+    	display: flex;
+    	height: 100px;
+    	justify-content: space-between;
+    	margin-left: 20px;
+    	margin-right: 20px;
+	}
+
+	.words
+	{
+    	padding: 20px;
+  	color: #2ab4a2;
+  	font-weight: 470;
+  	font-size: 45px;
+  	font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.texts
+	{
+    	color: #2ab4a2;
+    	font-weight: bold;
+    	font-size: 15px;
+    	padding: 40px;
+	}
+
+  hr
+  {
+  	color: #f8fcfc;
+  	width: 92.4%;
+  	margin-left: 49px;
+  }
+
+  span
+  {
+  	margin-left: 20px;
+  }
+    	</style>
+
+    	<header class="nav">
+    	<p class="words">TO THE NEW</p>
+    	<p class="texts">Home<span>Quick Help</span></p>
+   	 
+	</header>
+	<hr>
+    	<div class="bugs">
+     	<div class="bug">
+     	<p>Bug Report</p>
+     	<form>
+      	<label id="title" for="">Title:*</label>
+      	<input type="text" placeholder="">
+      	<label id="description" for="">Description:*</label>
+      	<input type="textbox">
+      	<label id="operating" for="">Operating System:</label>
+      	<select class="select-css">
+        	<option>Windows Xp</option>
+        	<option>Windows10</option>
+        	<option>Windows7</option>
+       	 
+    	</select>
+
+    	<label id="product" for="">Product:*</label>
+      	<select class="select-csss">
+        	<option>Formoid</option>
+        	<option>Windows10</option>
+        	<option>Windows7</option>
+       	 
+    	</select>
+    	 
+    	<label id="version" for="">Version:*</label>
+      	<input type="text" id="ver" placeholder="">
+
+      	<label id="license" for="">License:</label>
+     	 
+     	 
+        	<div class="some-class">
+          	<input type="radio" class="radio" name="x" value="y" id="y" />
+          	<label class="lab" for="y">Free</label>
+          	<input type="radio" class="radio" name="x" value="z" id="z" />
+          	<label class="lab" for="z">Business</label>
+        	</div>
+     	 
+        	<label id="product" for="">Severity:*</label>
+        	<select class="select-css">
+          	<option>Critical</option>
+          	<option>Non-Critical</option>
+          	<option>Okay</option>
+         	 
+      	</select>
+     	 
+      	<div class="buttonIn">
+        	<label id="attachments" for="">Attachments:*</label>
+        	<input type="text" placeholder="No file selected" id="enter">
+        	<button id="clear">Choose File</button>
+    	</div>
+
+     	</form>
+     	</div>
+    	<div class="send">
+    	<button id="sendb">Send</button>
+    	</div>
+    	 
+    	</div>
+    	<footer class="foot"></footer>
+	</body>
+</html>
